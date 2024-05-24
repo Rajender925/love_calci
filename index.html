@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+#first {
+    background-color: gray;
+    border-radius: 40px;
+    height: 350px;
+width: 400px;
+}
+
+        h1 {
+            color: white;
+            background-color:black;
+            width: 340px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px;
+            transition: 1s all;
+        }
+        h1:hover {
+            background-color: greenyellow;
+            color: black;
+            transform: scale(1.1);
+        }
+   #text1 {
+    height: 40px;
+    border-radius: 20px;
+
+   }
+   #but {
+    height: 40px;
+    width: 300px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-style:italic;
+  transition: 1s all;
+  box-shadow: 0px 0px 50px;
+   }
+   #but:hover {
+    transform:scale(1.5);
+   
+   }
+
+
+    </style>
+</head>
+<body bgcolor="black">
+    <center>
+    <div id="first">
+       
+    <div id="container"><h1>LOVE CALCULATOR</h1></div>
+    <div id="sec">
+    <input type="text" placeholder="enter name" id="text1">
+    <input type="text" placeholder="enter name" id="text1">
+</div><BR></BR>
+<div id="third"><button id="but">CALCULATE</button></div><br>
+<div id="fourth"></div>
+
+</div>
+</center>
+<script>
+   var n=document.getElementById("but");
+   n.addEventListener("click",function() {
+    var m=document.getElementsByTagName("input");
+    console.log(m[0].value)
+    console.log(m[1].value)
+    var loveper=Math.floor(Math.random()*100)
+    var p=document.getElementById("fourth");
+p.innerHTML="<h1>The Love between "+m[0].value+" and "+m[1].value+" is "+loveper+" Percentage</h1>"
+   })
+</script>
+</body>
+</html>
